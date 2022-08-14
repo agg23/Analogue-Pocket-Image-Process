@@ -1,0 +1,17 @@
+{
+  "name": "pocket-image-process",
+  "version": "1.0.0",
+  "description": "Prepares and extract bitmaps for Analogue Pocket platform images",
+  "main": "index.js",
+  "scripts": {
+    "create": "node src/create.js",
+    "extract": "node src/extract.js"
+  },
+  "type": "module",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "image-encode": "^1.3.1",
+    "image-pixels": "^2.2.2"
+  }
+}
