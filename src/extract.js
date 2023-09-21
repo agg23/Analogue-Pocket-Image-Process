@@ -43,7 +43,7 @@ for (let i = 0; i < rgba.length / 4; i++) {
   const prevRow = Math.floor(i / width);
 
   const row = prevColumn;
-  const column = height - prevRow;
+  const column = height - 1 - prevRow;
 
   const outputPos = (row * height + column) * 4;
   rotatedImage[outputPos] = byte1;

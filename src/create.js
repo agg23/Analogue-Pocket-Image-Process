@@ -26,7 +26,9 @@ const create = async () => {
       byte = 0;
     }
 
+    // Brightness byte
     image[i / 2] = byte;
+    // Reserved byte
     image[i / 2 + 1] = 0;
   }
 
@@ -39,7 +41,7 @@ const create = async () => {
     const prevColumn = i % width;
     const prevRow = Math.floor(i / width);
 
-    const row = width - prevColumn;
+    const row = width - 1 - prevColumn;
     const column = prevRow;
 
     rotatedImage[(row * height + column) * 2] = byte1;
